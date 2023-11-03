@@ -1,0 +1,411 @@
+* {
+    margin: 3;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Sans-Serif", "Dancing Script";
+}
+
+.logo{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-family: 'Dancing Script';
+}
+
+.navbar{
+    text-align: right;
+    margin-right: 90px;
+    margin-bottom: 40px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.navbar a::after{
+    background: gray;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 28px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 3500;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: black;
+}
+
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-right img{
+    width: 30vw;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    max-width: 600px;
+    border-radius: 30px;
+}
+
+.home-left{
+    width: 60rem;
+    margin-right: 90px;
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+
+.home-left p{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.home-left h1{
+    font-size: 40px;
+}
+
+.service{
+    margin: auto;
+}
+
+.service .reservation{
+    position: relative;
+}
+
+.reservation{
+    padding: 15px;
+    height: 300px;
+}
+
+.reservation img{
+    width: 30vw;
+    position: absolute;
+    content: '';
+}
+
+.reservation .content{
+    position: absolute;
+    content: '';
+    margin-top: 8%;
+    margin-left: 35%;
+    line-height: 30px;
+}
+
+
+/* catering */
+
+.service .catering{
+    position: relative;
+}
+
+.catering{
+    padding: 15px;
+    height: 300px;
+}
+
+.catering img{
+    width: 30vw;
+    position: absolute;
+    content: '';
+}
+
+.catering .content{
+    position: absolute;
+    right: 0;
+    content: '';
+    margin-left: 36.5%;
+    margin-top: 8%;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Order */
+
+/* .orders {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.bf-pizza img{
+    width: 900px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.cupcakes img{
+    width: 900px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bagels img{
+    width: 900px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.espresso img{
+    width: 900px;
+    height: 200px;
+    object-fit: cover;
+} */
+
+
+
+
+
+.orders{
+    gap: 3em;
+    margin: auto;
+}
+
+.card{
+    padding: 2em;
+    width: 400px;
+    height: 250px;
+    margin: 30px auto;
+    border-radius: 40px;
+}
+
+.card1{
+    background-image: url(pizza.jpg);
+    background-size: cover;
+    width: 80%;
+    background-position: center center;
+    position: relative;
+}
+
+.card2{
+    background-image: url(cupcake.jpg);
+    background-size: cover;
+    width: 80%;
+    background-position: center center;
+    position: relative;
+}
+
+.card3{
+    background-image: url(bagels.jpg);
+    background-size: cover;
+    width: 80%;
+    background-position: center center;
+    position: relative;
+}
+
+.card4{
+    background-image: url(espresso.jpg);
+    background-size: cover;
+    width: 80%;
+    background-position: center center;
+    position: relative;
+}
+
+.card1 .order-food1{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.card2 .order-food2{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.card3 .order-food3{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.card4 .order-food4{
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.orderbtn{
+    margin: auto;
+    background: black;
+    color: white;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.ser{
+    display: grid;
+    margin: auto;
+    height: 600px;
+    width: 1100px;
+    gap: 2.3em;
+    margin-top: 30px;
+    padding: 30px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    "left ."
+    "left .";
+    
+}
+
+.ser-card{
+    background: gray;
+    display: flex;
+    align-items: start;
+}
+
+.ser-card1{
+    grid-area: left;
+    background-image: url(merch.jpg);
+    background-size: 100%;
+}
+
+.ser-card2{
+    background-image: url(gift.jpg);
+    background-size: 100%;
+    background-position: center center;
+}
+
+.ser-card3{
+    background-image: url(customer.jpg);
+    background-size: 100%;
+    background-position: center bottom;
+}
+
+.ser-details {
+    background: white;
+    width: 60%;
+    height: 15%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.ser-details a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+
+.footer{
+    background: black;
+    width: 100%;
+}
+
+.footer-logo{
+    top: 40px;
+}
+
+.footer-logo h1{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-family: 'Dancing Script';
+    color: white;
+   
+}
+
+.club{
+    color: white;
+}
+
+.footer-socialmedia{
+    color: white;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px 40px;
+}
+
+.fa-linkedin{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.fa-linkedin:hover{
+    color: rgb(84, 91, 226);
+    font-size: 35px;
+}
+
+.fa-instagram{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fa-facebook{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-socialmedia a{
+    margin: 5px;
+    justify-content: space-between;
+}
